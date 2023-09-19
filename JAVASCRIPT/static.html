@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<script>
+var i=1
+function start()
+{
+document.getElementById('hone').style.position="relative";
+document.getElementById('hone').style.left=+i;
+document.getElementById('htwo').style.position="relative";
+document.getElementById('htwo').style.top=+i;
+i++;
+time=setTimeout("start()",9);
+}
+
+function stop()
+{
+clearTimeout(time);
+}
+</script>
+</head>
+
+<body>
+<body onload="start()" onunload="stop()">
+
+<h1 id="hone">head1</h1>
+<h1 id="htwo">head2</h1>
+
+</body>
+</html>

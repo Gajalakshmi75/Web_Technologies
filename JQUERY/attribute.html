@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>THE JQUERY ATTRIBUTE</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var title=$("em").attr("title");
+	$("#divid").text(title);
+	});
+</script>
+</head>
+<body>
+	<div>
+	<em title="RGUKT">this is first paragraph</em>
+	<p id="myid">this is second paragraph</p>
+	<div id="divid"></div>
+	</div>
+</body>
+</html>

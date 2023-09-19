@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+cc=0;
+function changeimg()
+{
+if(cc==0)
+{
+cc=1;
+document.getElementById('pic').src="pic.jpg";
+}
+else
+{
+document.getElementByIf('pic').src="photo.jpg";
+}
+</script>
+</head>
+
+<body>
+<img id="pic" width="180" height="100"
+onclick="changeimg()" src="pic.jpg"/>
+
+<p>click to turn on /off img</p>
+</body>
+</html>

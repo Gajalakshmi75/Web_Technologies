@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jquery 1st</title>
+	<!--<script type="text/javascript" href="jquery.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<center><h1 class="head1" id="1st">hello world</h1></center>
+
+<script type="text/javascript">
+	var i=1;
+	for(i=1;i<5;i++){
+		$('#1st').hide(3000).show(2000);
+		$('.head1').css("background-color","red");
+	}
+/*jquery events*/
+$('.head1').on({
+	mouseenter:function(){
+		alert("mouseover");
+	},
+	
+	mouseleave:function(){
+		alert("mouseremoved");
+	},
+
+	click:function(){
+		alert("clicked");
+     }
+})
+</script>
+</body>
+</html>

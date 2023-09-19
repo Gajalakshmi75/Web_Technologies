@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.ancestors * {
+display:block;
+border:2px solid lightgrey;
+color:lightgrey;
+padding:5px;
+margin:15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("span").parentsUntil("div").css({"border":"2px solid red","color":"red"});//it finds the elements b/w 2 elements
+ /*$("span").parents().css({"border":"2px solid red","color":"red"});it finds the parent of the child*/
+});
+</script>
+</head>
+
+<body class="ancestors">body (great-great-grandparent)
+<div style="width:500px;">div (great-grandparent)
+ <ul>ul (grandparent)
+  <li>li (parent)
+   <span>span</span>
+  </li>
+ </ul>
+</div>
+</body>
+</html>

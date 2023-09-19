@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+<p id="demo"></p>
+<button type="button" onclick="myfunc()">pro</button>
+
+<script>
+function myfunc()
+{
+let text;
+let person=prompt("please enter your name","chandini");
+if(person==null||person=="")
+{
+text="user cancelled the prompt";
+}
+else
+{
+text="hello"+person+"how are uh!";
+}
+document.getElementById("demo").innerHTML=text;
+}
+</script>
+</body>
+</html>

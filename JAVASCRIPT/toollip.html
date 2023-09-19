@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function get(txt)
+{
+document.getElementById('tip').innerHTML=txt;
+}
+function reset()
+{
+document.getElementById('tip').innerHTML="";
+}
+</script>
+</head>
+
+<body>
+<span onmouseover="get('hoi')"
+onmouseout="reset()">coffe</span>
+<span onmouseover="get('hello')"
+onmouseout="reset()">cool</span>
+
+<p id="tip">
+</p>
+</body>
+</html>

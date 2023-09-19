@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div3").fadeTo("slow",0.9);
+    $("#div1").fadeTo("slow",0.8);
+    $("#div2").fadeOut(3000);
+});
+});
+</script>
+</head>
+
+<body>
+<h1>demonstarte the fadeout,fadetoggele,fadeto method</h1>
+
+<button>click me</button><br><br>
+
+<div id="div3" style="width:80px;height:80px;background-color:red;"></div><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:green;"></div><br>
+
+<div id="div2" style="width:80px;height:80px;background-color:blue;"></div>
+
+</body>
+</html>

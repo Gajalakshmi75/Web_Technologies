@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#flip").click(function(){
+$("#panel").slideUp("slow");
+});
+});
+</script>
+<style>
+#panel,#flip{
+	padding:5px;
+	text-align:center;
+	background-color:pink;
+	border:solid 1px pink;
+}
+#panel{
+	padding:100px;
+}
+</style>
+</head>
+<body>
+<div id="flip">click to slide up </div>
+<div id="panel">HELLO RGUKT SKLM</div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.descedants * {
+color:lightgrey;
+padding:5px;
+display:block;
+margin:4px;
+border:3px solid lightgrey;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+//$("div").find("span").css({"border":"3px solid blue","color":"blue"});
+  $("div").children().css({"broder":"3px solid red","color":"red"});
+});
+
+</script>
+</head>
+<body>
+<div class="descedants" style="width:500px;">div (current element)
+ <p>p(child)
+  <span>span (grand child)</span>
+</p>
+<p>p (child)
+<span>span (grandchild)</span>
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<body>
+<h2>confirm pop up box</h2>
+
+<button onclick="prompt()"value="prompt">button</button>
+<p id="demo"></p>
+
+<script>
+function prompt()
+{
+var txt;
+if(confirm("press abutton!")){
+txt="you pressed ok";
+}
+else{
+txt="you pressed cancel"}
+document.getElementById('demo').innerHTML=txt;
+}
+</script>
+</body>
